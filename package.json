@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "pnpm open-browser && next dev --turbopack --port 3456",
+    "open-browser": "open http://localhost:3456",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.46.1",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
